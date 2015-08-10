@@ -1,5 +1,9 @@
 {
   "private": true,
+  "scripts": {
+    "deploy:pc": "gulp deploy --pc",
+    "deploy:sp": "gulp deploy --sp"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "yargs": "^3.18.0"

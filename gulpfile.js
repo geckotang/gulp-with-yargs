@@ -2,11 +2,10 @@
 var gulp = require('gulp');
 var args = require('yargs').argv;
 var config = {
-  pc: 'こんにちはPCです'
-}
+  pc: 'こんにちはPCです',
+  sp: 'こんにちはSPです'
+};
 gulp.task('deploy', function(cb) {
-  if (args.pc) {
-    console.log(config.pc);
-  }
+  console.log(config[args.pc ? "pc" : "sp"]);
 });
 
